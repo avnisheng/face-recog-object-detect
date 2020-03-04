@@ -2,65 +2,114 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>FACE-RECOG DATA</title>
-		<style>
-		form { background-color:#eaeaea;
-			   font-family: Arial, sans-serif;
-			 padding: 200px;
-			 min-width: 400px;	}
-		label { float: left;
-			    width: 150px; 
-			    clear: left;
-			    text-align: right; 
-			    padding-right: 20px;
-			    margin-top: 15px; }
-				
-		}
-		input, textarea { margin-top: 10px; 
-					display: block;} 
-		#mySubmit { margin-left: 160px; }
-		</style>
+		<title>Upload Data For Person</title>
+		<link rel="stylesheet" type="text/css" href="css/style1.css">
+<!-- 		<style> -->
+<!-- 		form { background-color:#eaeaea; -->
+<!-- 			   font-family: Arial, sans-serif; -->
+<!-- 			 padding: 200px; -->
+<!-- 			 min-width: 400px;	} -->
+<!-- 		label { float: left; -->
+<!-- 			    width: 150px;  -->
+<!-- 			    clear: left; -->
+<!-- 			    text-align: right;  -->
+<!-- 			    padding-right: 20px; -->
+<!-- 			    margin-top: 15px; } -->
+<!-- 				 -->
+<!-- 		} -->
+<!-- 		input, textarea { margin-top: 10px;  -->
+<!-- 					display: block;}  -->
+<!-- 		#mySubmit { margin-left: 160px; } -->
+<!-- 		</style> -->
 	</head>
 	<body>
-	<div class='container'>
-		
-	</body>
-	
-	
-	
-	<body>
 		<img class="wave" src="img/wave.png">
-		<div class="container">
-			<div class="img">
-				<img src="img/bg.svg">
+		<div class='container'>
+			<div class  = "form-content">
+				<form action="upload.php">
+					<h2 class="title" align="center">Upload Information</h2>
+					<table align="center" cellpadding="10">
+					<tr>
+						<td>First & Last Name</td>
+						<td><input type="text" id="name" placeholder="Enter First & Last Name"></td>
+						<td>Date of Birth </td>
+						<td><input type="text" id="DOB" placeholder="Enter Birthdate"></td>
+					</tr>
+					<tr>
+						<td>Email Address</td>
+						<td><input type="text" id="email" placeholder="Enter Email"></td>
+						<td>Phone Number</td>
+						<td><input type="text" id="number" placeholder="Enter Phone Number"></td>
+					</tr>
+					<tr>
+						<td>Home Address</td>
+						<td><input type="text" id="address" placeholder="Enter Address" maxlength="100" style="width: 270%;"></td>
+					</tr>
+					<tr>
+						<td>City</td>
+						<td><input type="text" id="city" placeholder="Enter City"></td>
+						<td>Zip Code</td>
+						<td><input type="text" id="zcode" placeholder="Enter Zip Code"></td>
+					</tr>
+					<tr>
+						<td>Relationship</td>
+						<td><input type="text" id="rel" placeholder="Enter Relationship to this person"></td>
+						<td>Occupation</td>
+						<td><input type="text" id="occ" placeholder="Enter Job Name"></td>
+					</tr>
+					<tr>
+						<td>Hobbies</td>
+						<td><textarea type="text" id="hobbies" placeholder="Enter Favorite hobbies" rows="5"></textarea></td>
+						<td>Favorite Sports</td>
+						<td><textarea type="text" id="sports" placeholder="Enter Favorite Sports to Watch" rows="5" cols="18"></textarea></td>
+					</tr>
+					<tr>
+						<td>Upload Images of Person</td>
+						<td><input type="file" id="img" name="img" accept="image/*"></td>
+					</tr>
+					
+				</form>
+				
+				
 			</div>
-			<div class="login-content">
-				<form action="index.html">
-					<img src="img/avatar.svg">
-					<h2 class="title">Welcome</h2>
-	           		<div class="input-div one">
-	           		   <div class="i">
-	           		   		<i class="fas fa-user"></i>
-	           		   </div>
-	           		   <div class="div">
-	           		   		<h5>Username</h5>
-	           		   		<input type="text" class="input">
-	           		   </div>
-	           		</div>
-	           		<div class="input-div pass">
-	           		   <div class="i"> 
-	           		    	<i class="fas fa-lock"></i>
-	           		   </div>
-	           		   <div class="div">
-	           		    	<h5>Password</h5>
-	           		    	<input type="password" class="input">
-	            	   </div>
-	            	</div>
-	            	<a href="#">Forgot Password?</a>
-	            	<input type="submit" class="btn" value="Login">
-	            </form>
-	        </div>
-	    </div>
-	    <script type="text/javascript" src="js/main.js"></script>
+		</div>
 	</body>
+<!-- 	 -->
+<!-- 	 -->
+<!-- 	 -->
+<!-- 	<body> -->
+<!-- 		<img class="wave" src="img/wave.png"> -->
+<!-- 		<div class="container"> -->
+<!-- 			<div class="img"> -->
+<!-- 				<img src="img/bg.svg"> -->
+<!-- 			</div> -->
+<!-- 			<div class="login-content"> -->
+<!-- 				<form action="index.html"> -->
+<!-- 					<img src="img/avatar.svg"> -->
+<!-- 					<h2 class="title">Welcome</h2> -->
+<!-- 	           		<div class="input-div one"> -->
+<!-- 	           		   <div class="i"> -->
+<!-- 	           		   		<i class="fas fa-user"></i> -->
+<!-- 	           		   </div> -->
+<!-- 	           		   <div class="div"> -->
+<!-- 	           		   		<h5>Username</h5> -->
+<!-- 	           		   		<input type="text" class="input"> -->
+<!-- 	           		   </div> -->
+<!-- 	           		</div> -->
+<!-- 	           		<div class="input-div pass"> -->
+<!-- 	           		   <div class="i">  -->
+<!-- 	           		    	<i class="fas fa-lock"></i> -->
+<!-- 	           		   </div> -->
+<!-- 	           		   <div class="div"> -->
+<!-- 	           		    	<h5>Password</h5> -->
+<!-- 	           		    	<input type="password" class="input"> -->
+<!-- 	            	   </div> -->
+<!-- 	            	</div> -->
+<!-- 	            	<a href="#">Forgot Password?</a> -->
+<!-- 	            	<input type="submit" class="btn" value="Login"> -->
+<!-- 	            </form> -->
+<!-- 	        </div> -->
+<!-- 	    </div> -->
+<!-- 	    <script type="text/javascript" src="js/main.js"></script> -->
+<!-- 	</body> -->
 </html>

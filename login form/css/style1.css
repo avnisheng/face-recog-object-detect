@@ -1,3 +1,12 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
 
 .wave{
 	position: fixed;
@@ -8,41 +17,78 @@
 }
 
 .container{
-	width: 100vw;
-	height: 100vh;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap :7rem;
-	padding: 0 2rem;
+	position: absolute;
+	right: 50px;
+	left: 250px;
+	margin: 10px;
+	max-width: 1000px;
+	padding: 20px;
+	background-color: white;
 }
 
+.form-content{
+	width: 450px;
+	padding: 0px;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+/*	transform: translate(-50%, -50%);*/
+	background: #191919;
+	text-align: center;
+	border-radius: 24px;
+}
 
+.form-content h2{
+	margin: 15px 0;
+	color: white;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+	text-align: center;
+}
 
+/* Full-width input fields */
+.form-content .input[type=text] {
+	width: 250px;
+	border: 0;
+	padding: 15px 10px;
+	display: block;
+	margin: 5px auto;
+	text-align: center;
+	background: #none;
+	border: 2px solid #3498db;
+	border-radius: 24px;
+	transition: 0.25s;
+}
 
-
-
-
-
-
-
-
-
+.form-content .input[type=text]:focus{
+	border-color: #ddd;
+	width: 350px;
+}
 
 .btn{
 	display: block;
-	width: 100%;
+	width: 100px;
 	height: 50px;
 	position: relative;
 	border-radius: 25px;
 	outline: none;
-	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
-	background-size: 200%;
+	border: 2px solid #3498db;
+	background: none;
+/*	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);*/
+/*	background-size: 200%;*/
 	font-size: 1.2rem;
-	color: #fff;
+	color: white;
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	margin: 1rem 0;
 	cursor: pointer;
 	transition: .5s;
+}
+
+.btn:hover{
+	background: #3498db;
+}
+
+.form-content .span{
+	color: white;
 }

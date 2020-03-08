@@ -1,9 +1,140 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Upload Data For Person</title>
-		<link rel="stylesheet" type="text/css" href="css/style1.css">
+		<!DOCTYPE html>
+		<html>
+			<head>
+				<meta charset="UTF-8">
+				<title>Information</title>
+				<link rel="stylesheet" type="text/css" href="css/style1.css">
+				<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+				<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+			</head>
+			<body>
+				<img class="wave" src="img/wave.png">
+				<div class="container">
+					<div class="form-content" >
+						<form class="content-top" action=" http://frod.s3.amazonaws.com/" method="post" enctype=”multipart/form-data>
+							<h2 style="border:1px transparent blue">Add User</h2>
+		<!-- 					<div class="input-div one">	 -->
+								<div class="name">
+<!-- 									<h4>First and Last Name</h4> -->
+									<input type="text" id="f&lname" class="input" placeholder="First and Last Name ">
+								</div>
+								<div class="dob">
+<!-- 									<label for="dob">Date of Birth</label> -->
+									<input type="text" id="dob" class="input" placeholder="Date of Birth dd/mm/year">
+								</div>
+								<div class="email">
+<!-- 									<label for="email">Email Address</label> -->
+									<input type="text" id="email" class="input" placeholder="Email Address">
+								</div>
+								<div class="phone">
+<!-- 									<label for="email">Phone Number</label> -->
+									<input type="text" id="phone" class="input" placeholder="Phone Number">
+								</div>
+								<div class="home">
+<!-- 									<label for="home">Home Address</label> -->
+									<input type="text" id="home" class="input" placeholder="Home Address">
+								</div>
+								<div class="city">
+<!-- 									<label for="city">City</label> -->
+									<input type="text" id="city" class="input" placeholder="City">
+								</div>
+		<!-- 					</div> -->
+								<div class="zip">
+<!-- 									<label for="zip">Zip Code</label> -->
+									<input type="text" id="zip" class="input" placeholder="Zip Code">
+								</div>
+								<div class="rel">
+<!-- 									<label for="rel">Relationship</label> -->
+									<input type="text" id="rel" class="input" placeholder="Relationship">
+								</div>
+								<div class="occu">
+<!-- 									<label for="occu">Occupation</label> -->
+									<input type="text" id="occu"  class="input"placeholder="Occupation">
+								</div>
+								<div class="spouse">
+<!-- 									<label for="spouse">Spouse</label> -->
+									<input type="text" id="spouse" class="input" placeholder="Spouse">
+								</div>
+								<div class="dad">
+<!-- 									<label for="dada">Father & Mother</label> -->
+									<input type="text" id="dad" class="input" placeholder="Father & Mother">
+								</div>
+								<div class="brosis">
+<!-- 									<label for="brosis">Brothers & Sisters</label> -->
+									<input type="text" id="brosis" class="input" placeholder="Brothers & Sisters">
+								</div>
+<!-- 								<div class="sports"> -->
+<!--  									<label for="sports">Favorite Sports</label> --> 
+<!-- 									<input type="text" id="sports" class="input" placeholder="Favorite Sports"> -->
+<!-- 								</div> -->
+							<button type="submit" onclick="window.location.href = '';" class="btn">SUBMIT</button>
+							<span>Successfully added a user!</span>
+						</form>
+					</div>
+				</div>
+			</body>
+		</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- 		<style> -->
 <!-- 		form { background-color:#eaeaea; -->
 <!-- 			   font-family: Arial, sans-serif; -->
@@ -21,59 +152,59 @@
 <!-- 					display: block;}  -->
 <!-- 		#mySubmit { margin-left: 160px; } -->
 <!-- 		</style> -->
-	</head>
-	<body>
-		<img class="wave" src="img/wave.png">
-		<div class='container'>
-			<div class  = "form-content">
-				<form action="upload.php">
-					<h2 class="title" align="center">Upload Information</h2>
-					<table align="center" cellpadding="10">
-					<tr>
-						<td>First & Last Name</td>
-						<td><input type="text" id="name" placeholder="Enter First & Last Name"></td>
-						<td>Date of Birth </td>
-						<td><input type="text" id="DOB" placeholder="Enter Birthdate"></td>
-					</tr>
-					<tr>
-						<td>Email Address</td>
-						<td><input type="text" id="email" placeholder="Enter Email"></td>
-						<td>Phone Number</td>
-						<td><input type="text" id="number" placeholder="Enter Phone Number"></td>
-					</tr>
-					<tr>
-						<td>Home Address</td>
-						<td><input type="text" id="address" placeholder="Enter Address" maxlength="100" style="width: 270%;"></td>
-					</tr>
-					<tr>
-						<td>City</td>
-						<td><input type="text" id="city" placeholder="Enter City"></td>
-						<td>Zip Code</td>
-						<td><input type="text" id="zcode" placeholder="Enter Zip Code"></td>
-					</tr>
-					<tr>
-						<td>Relationship</td>
-						<td><input type="text" id="rel" placeholder="Enter Relationship to this person"></td>
-						<td>Occupation</td>
-						<td><input type="text" id="occ" placeholder="Enter Job Name"></td>
-					</tr>
-					<tr>
-						<td>Hobbies</td>
-						<td><textarea type="text" id="hobbies" placeholder="Enter Favorite hobbies" rows="5"></textarea></td>
-						<td>Favorite Sports</td>
-						<td><textarea type="text" id="sports" placeholder="Enter Favorite Sports to Watch" rows="5" cols="18"></textarea></td>
-					</tr>
-					<tr>
-						<td>Upload Images of Person</td>
-						<td><input type="file" id="img" name="img" accept="image/*"></td>
-					</tr>
-					
-				</form>
-				
-				
-			</div>
-		</div>
-	</body>
+<!-- 	</head> -->
+<!-- 	<body> -->
+<!-- 		<img class="wave" src="img/wave.png"> -->
+<!-- 		<div class='container'> -->
+<!-- 			<div class  = "form-content"> -->
+<!-- 				<form action="upload.php"> -->
+<!-- 					<h2 class="title" align="center">Upload Information</h2> -->
+<!-- 					<table align="center" cellpadding="10"> -->
+<!-- 					<tr> -->
+<!-- 						<td>First & Last Name</td> -->
+<!-- 						<td><input type="text" id="name" placeholder="Enter First & Last Name"></td> -->
+<!-- 						<td>Date of Birth </td> -->
+<!-- 						<td><input type="text" id="DOB" placeholder="Enter Birthdate"></td> -->
+<!-- 					</tr> -->
+<!-- 					<tr> -->
+<!-- 						<td>Email Address</td> -->
+<!-- 						<td><input type="text" id="email" placeholder="Enter Email"></td> -->
+<!-- 						<td>Phone Number</td> -->
+<!-- 						<td><input type="text" id="number" placeholder="Enter Phone Number"></td> -->
+<!-- 					</tr> -->
+<!-- 					<tr> -->
+<!-- 						<td>Home Address</td> -->
+<!-- 						<td><input type="text" id="address" placeholder="Enter Address" maxlength="100" style="width: 270%;"></td> -->
+<!-- 					</tr> -->
+<!-- 					<tr> -->
+<!-- 						<td>City</td> -->
+<!-- 						<td><input type="text" id="city" placeholder="Enter City"></td> -->
+<!-- 						<td>Zip Code</td> -->
+<!-- 						<td><input type="text" id="zcode" placeholder="Enter Zip Code"></td> -->
+<!-- 					</tr> -->
+<!-- 					<tr> -->
+<!-- 						<td>Relationship</td> -->
+<!-- 						<td><input type="text" id="rel" placeholder="Enter Relationship to this person"></td> -->
+<!-- 						<td>Occupation</td> -->
+<!-- 						<td><input type="text" id="occ" placeholder="Enter Job Name"></td> -->
+<!-- 					</tr> -->
+<!-- 					<tr> -->
+<!-- 						<td>Hobbies</td> -->
+<!-- 						<td><textarea type="text" id="hobbies" placeholder="Enter Favorite hobbies" rows="5"></textarea></td> -->
+<!-- 						<td>Favorite Sports</td> -->
+<!-- 						<td><textarea type="text" id="sports" placeholder="Enter Favorite Sports to Watch" rows="5" cols="18"></textarea></td> -->
+<!-- 					</tr> -->
+<!-- 					<tr> -->
+<!-- 						<td>Upload Images of Person</td> -->
+<!-- 						<td><input type="file" id="img" name="img" accept="image/*"></td> -->
+<!-- 					</tr> -->
+<!-- 					 -->
+<!-- 				</form> -->
+<!-- 				 -->
+<!-- 				 -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+<!-- 	</body> -->
 <!-- 	 -->
 <!-- 	 -->
 <!-- 	 -->

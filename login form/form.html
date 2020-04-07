@@ -10,10 +10,9 @@
 			<body>
 				<img class="wave" src="img/wave.png">
 				<div class="container">
-					<div class="form-content" >
-						<form class="content-top" action=" http://frod.s3.amazonaws.com/" method="post" enctype=”multipart/form-data>
+					<div class="form-content">
+						<form action = "process.php" class="content-top" method="post" enctype="multipart/form-data">
 							<h2 style="border:1px transparent blue">Add User</h2>
-		<!-- 					<div class="input-div one">	 -->
 								<div class="name">
 <!-- 									<h4>First and Last Name</h4> -->
 									<input type="text" id="f&lname" class="input" placeholder="First and Last Name ">
@@ -38,7 +37,6 @@
 <!-- 									<label for="city">City</label> -->
 									<input type="text" id="city" class="input" placeholder="City">
 								</div>
-		<!-- 					</div> -->
 								<div class="zip">
 <!-- 									<label for="zip">Zip Code</label> -->
 									<input type="text" id="zip" class="input" placeholder="Zip Code">
@@ -55,23 +53,26 @@
 <!-- 									<label for="spouse">Spouse</label> -->
 									<input type="text" id="spouse" class="input" placeholder="Spouse">
 								</div>
-								<div class="dad">
-<!-- 									<label for="dada">Father & Mother</label> -->
-									<input type="text" id="dad" class="input" placeholder="Father & Mother">
-								</div>
-								<div class="brosis">
-<!-- 									<label for="brosis">Brothers & Sisters</label> -->
-									<input type="text" id="brosis" class="input" placeholder="Brothers & Sisters">
+<!-- 								<div class="dad"> -->
+<!-- 									<input type="text" id="dad" class="input" placeholder="Father & Mother"> -->
+<!-- 								</div> -->
+<!-- 								<div class="brosis"> -->
+<!-- 									<input type="text" id="brosis" class="input" placeholder="Brothers & Sisters"> -->
+<!-- 								</div> -->
+								<div class="img">
+									<input id="form" type="file" name="photo" accept="image/x-png, image/gif, image/jpeg">
+<!-- 									<input type="file" name="files[]" multiple /> -->
+									<input type="submit" value="Upload File" name="submit" />
 								</div>
 <!-- 								<div class="sports"> -->
 <!--  									<label for="sports">Favorite Sports</label> --> 
 <!-- 									<input type="text" id="sports" class="input" placeholder="Favorite Sports"> -->
 <!-- 								</div> -->
 							<button type="submit" onclick="window.location.href = '';" class="btn">SUBMIT</button>
-							<span>Successfully added a user!</span>
 						</form>
 					</div>
 				</div>
+				<script src = "js/upload.js"></script>
 			</body>
 		</html>
 
